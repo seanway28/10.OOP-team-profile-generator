@@ -1,19 +1,50 @@
-const Potion = require('../lib/Potion.js');
-
-test('creates a health potion object', () => {
-    const potion = new Potion('health');
+const Intern = require('../lib/Intern.js');
+// Test for intern object
+test('creates an intern object', () => {
+    const intern = new Intern('Ben', 4, 'ben28@icloud.com');
   
-    expect(potion.name).toBe('health');
-    expect(potion.value).toEqual(expect.any(Number));
+    expect(intern.name).toBe('Ben');
+    expect(intern.id).toEqual(expect.any(Number));
+    expect(intern.email).toEqual(expect.stringContaining('@'));
   });
+// Test for Name
+test('gets name of Intern', () => {
+  const Intern = new Intern('Ben', 4, 'ben28@icloud.com');
 
-test('creates a random potion object', () => {
-  const potion = new Potion();
+    expect(intern.getName()).toBe('Ben');
+});
+// Test for id
+test ('gets ID of intern', ()=> {
+  const intern = new Intern('Ben', 4, 'ben28@icloud.com');
 
-  expect(potion.name).toEqual(expect.any(String));
-  expect(potion.name.length).toBeGreaterThan(0);
-  expect(potion.value).toEqual(expect.any(Number));
-});  
+    expect(intern.getId()).toBe(4);
+});
+// Test for email
+test ('gets email of intern', () => {
+  const intern = new Intern('Ben', 4, 'ben28@icloud.com');
+
+  expect(intern.getEmail()).toEqual(expect.stringContaining('@'));
+});
+// Test for role
+test ('gets role of intern', () => {
+  const intern = new Intern('Ben', 4, 'Ben28@icloud.com');
+
+  expect(intern.getRole()).toEqual('Intern');
+});
+// Test for school - role specific
+test ('creates an intern object', () => {
+  const intern = new Intern('Ben', 4, 'Ben28@icloud.com');
+
+  expect(intern.getSchool()).toEqual(expect.any(String));
+});
+
+
+
+// CLASS WORK
+//   expect(potion.name).toEqual(expect.any(String));
+//   expect(potion.name.length).toBeGreaterThan(0);
+//   expect(potion.value).toEqual(expect.any(Number));
+// });  
 
 // function Potion(name) {
 //   this.types = ['strength', 'agility', 'health'];
@@ -31,4 +62,4 @@ test('creates a random potion object', () => {
 // module.exports = function() {
 //   this.name = 'health';
 //   this.value = 20;
-// };
+// 
