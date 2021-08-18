@@ -1,22 +1,22 @@
  
-const inquirer =require("inquirer");
-const fs = require("fs");
+const inquirer =require('inquirer');
+const fs = require('fs');
 
 // sources
-const Manager = require("./lib/Manager");
+const Manager = require('./lib/Manager');
 const Engineer = required('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
-//html template
+// html template
 const pageTemplate = require('./lib/page-template');
 const employeeArray = [];
 
-// questions to ask
+// Questions to ask
 const employeeForm = [
     {
         type: 'input',
         name: 'name',
-        message: 'What is the employee\'s full name?',
+        message: 'What is the employees full name?',
         validate: nameEntry => {
             if (nameEntry) {
                 return true;

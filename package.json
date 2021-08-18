@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/seanway28/10.OOP-team-profile-generator/issues"
   },
-  "homepage": "https://github.com/seanway28/10.OOP-team-profile-generator#readme"
+  "homepage": "https://github.com/seanway28/10.OOP-team-profile-generator#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
 }
