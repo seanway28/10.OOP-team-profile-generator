@@ -158,7 +158,7 @@ console.log('Hello amd Welcome to the Team Profile Generator!');
 userPrompt()
 .then(teamData => pageCTemplate(teamData))
 .then(completedHTML => pageCreation(completedHTML))
-.thrn(err => console.log(err));
+.then(err => console.log(err));
 
 
 
