@@ -1,13 +1,13 @@
- 
+// Modules Required 
 const inquirer =require('inquirer');
 const fs = require('fs');
 
-// sources
+// Sources
 const Manager = require('./lib/Manager');
 const Engineer = required('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
-// html template
+// Html template
 const pageTemplate = require('./lib/page-template');
 const employeeArray = [];
 
@@ -74,8 +74,7 @@ const employeeForm = [
                         return ['Engineer', 'Engineer', 'Intern']
                     } else {
                         return ['Manager', 'Engineer', 'Intern']
-                    }
-                    
+                    }    
                 }
         },
     // If Manager, ask for office number
@@ -150,9 +149,7 @@ const pageCreation = (pageContent) => {
     };
 };
 
-
 // Greeting
-
 console.log('Hello amd Welcome to the Team Profile Generator!');
 
 userPrompt()
