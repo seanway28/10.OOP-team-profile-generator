@@ -141,12 +141,12 @@ const userPrompt = () => {
 
 // Function to write file with html template
 const pageCreation = (pageContent) => {
-    fs.writeFile('./dist/index.html'), pageContent, err => {
+    fs.writeFile('./dist/index.html', pageContent, err => {
         if (err) {
             throw err
         };
         console.log ('Team Profile Page Created in dist folder.,')
-    };
+    });
 };
 
 // Greeting
