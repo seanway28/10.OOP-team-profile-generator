@@ -150,7 +150,7 @@ const pageCreation = (pageContent) => {
 };
 
 // Greeting
-console.log('Hello amd Welcome to the Team Profile Generator!');
+console.log('Hello and Welcome to the Team Profile Generator!');
 
 userPrompt()
 .then(teamData => pageTemplate(teamData))
