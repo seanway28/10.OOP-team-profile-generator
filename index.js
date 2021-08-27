@@ -4,7 +4,7 @@ const fs = require('fs');
 
 // Sources
 const Manager = require('./lib/Manager');
-const Engineer = required('./lib/Engineer');
+const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
 // Html template
@@ -125,12 +125,12 @@ const employeeForm = [
 ]
 
 const userPrompt = () => {
-    return inquirer.prompt(employyForm)
+    return inquirer.prompt(employeeForm)
     .then(responseData => {
         // moves employee data to array
         employeeArray.push(responseData);
         // If option to add employee is taken
-        if (responseData.addEmploee) {
+        if (responseData.addEmployee) {
             return userPrompt();
         } else {
             return employeeArray;
@@ -153,7 +153,7 @@ const pageCreation = (pageContent) => {
 console.log('Hello amd Welcome to the Team Profile Generator!');
 
 userPrompt()
-.then(teamData => pageCTemplate(teamData))
+.then(teamData => pageTemplate(teamData))
 .then(completedHTML => pageCreation(completedHTML))
 .then(err => console.log(err));
 
