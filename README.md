@@ -1,4 +1,4 @@
-# 10.TeamProfileOOP
+The Fellowship Profile Generator
 ![10 teamProfileGen](https://user-images.githubusercontent.com/81600120/131188759-4e2fdc60-6713-4551-bd12-d7bdf18a3654.PNG)
 
 
