@@ -6,10 +6,11 @@ test('creates an intern object', () => {
     expect(intern.name).toBe('Ben');
     expect(intern.id).toEqual(expect.any(Number));
     expect(intern.email).toEqual(expect.stringContaining('@'));
+    expect(intern.github).toEqual(expect.any(String));
   });
 // Test for Name
 test('gets name of Intern', () => {
-  const Intern = new Intern('Ben', 4, 'ben28@icloud.com');
+  const Intern = newIntern('Ben', 4, 'ben28@icloud.com');
 
     expect(intern.getName()).toBe('Ben');
 });

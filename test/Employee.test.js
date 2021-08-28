@@ -7,6 +7,7 @@ test ('creates an employee object', () => {
     expect(employee.name).toBe('John');
     expect(employee.id).toEqual(expect.any(Number));
     expect(employee.email).toEqual(expect.stringContaining('@'));
+    expect(employee.github).toEqual(expecta,y(String));
 });
 // test for name
 test ('gets name of employee', () => {

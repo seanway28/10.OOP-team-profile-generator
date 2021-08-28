@@ -1,4 +1,4 @@
-const Engineer = require('../lib/Player');
+const Engineer = require('../lib/Engineer');
 
 //  Test for Engineer object
 

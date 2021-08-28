@@ -6,13 +6,14 @@ test ('creates a manager object', () => {
 
   expect(manager.name).toBe('Dan');
   expect(manager.id).toEqual(expect.any(Number));
-  expect(manager.email).toEqual(expect.stingContaining('@'));
+  expect(manager.email).toEqual(expect.stringContaining('@'));
+  expect(manager.github).toEqual(expect.any(String));
 });
 //Test for Name
 test ('gets name of manager', () => {
     const manager = new Manager('Dan', 2, 'Dan28@icloud.com');
 
-    expect(manager.getName()).toBe('Eric');
+    expect(manager.getName()).toEqual('Dan');
 });
 // Test for id
 test ('gets id of manager', () => {
